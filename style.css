@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    height: 1023px;
+    padding: 10rem 6rem;
+}
+
+h1 {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+form:invalid .button {
+    margin-top: 1.5rem;
+}
+
+form:invalid .invalid-span {
+    color: hsl(0, 100%, 74%);
+    font-size: 14px;
+    font-weight: 700;
+    left: 1.8rem;
+    top: 43%;
+    position: absolute;
+}
+
+form:invalid [type="email"]:invalid:focus+span+span {
+    display: none;
+}
+
+[type="email"]:valid+span+span {
+    display: none;
+}
+
+#fname:required:invalid {
+    margin-top: 0;
+}
+
+input:required:invalid {
+    background: url(./images/icon-error.svg) no-repeat right;
+    background-origin: content-box;
+    border: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    margin: 2rem 0 0.2rem;
+    outline: none;
+}
+
+input:invalid::placeholder {
+    color: transparent;
+}
+
+input:invalid+span {
+    color: hsl(0, 100%, 74%);
+    font-size: 14px;
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 67%;
+}
+
+input:valid+span {
+    display: none;
+}
+
+input:valid {
+    border: none;
+    border: 1px solid hsl(154, 59%, 51%);
+}
+
+/* [type="email"]:invalid:focus+span {
+    background-color: blue;
+} */
+
+.email-container {
+    position: relative;
+}
+
+.container {
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN */
+.main {
+    height: 100%;
+}
+
+.main .button {
+    background: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.main .button:hover {
+    cursor: pointer;
+}
+
+.main .form {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.main .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.main .info p {
+    color: white;
+    font-size: 17px;
+}
+
+.main input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.main input:focus {
+    border: 2px solid hsl(249, 10%, 26%);
+    outline-offset: 0px;
+    outline: none;
+}
+
+.main .info h1,
+.main .info p {
+    padding: 0.5rem;
+}
+
+.main .registeration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 1.5rem;
+}
+
+.main .reg-form {
+    background: white;
+    box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.75);
+    border-radius: 0.5rem;
+    padding: 2.5rem 2.5rem 3rem;
+}
+
+.main .term-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main .terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 11.5px;
+    position: absolute;
+}
+
+.main .terms strong {
+    color: hsl(0, 100%, 74%);
+}
+
+.main .pricing {
+    background: hsl(248, 32%, 49%);
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 5px -4px hsl(249, 6%, 76%);
+    margin: 0 0 1.7rem;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+
+.main .pricing p {
+    color: hsl(246, 25%, 77%);
+}
+
+.main .pricing strong {
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    form:invalid .button {
+        margin: 0 0 0.7rem;
+    }
+
+    input:invalid::placeholder {
+        color: grey;
+    }
+
+    input:required:invalid {
+        background: none;
+        border: 1px solid rgb(189, 187, 187);
+        margin: 0 0 1rem;
+    }
+
+    span {
+        display: none;
+    }
+
+    [type="submit"] {
+        border-radius: 0.3rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .main .info {
+        text-align: center;
+        padding: 2rem 0 1rem;
+        width: 100%;
+    }
+
+    .main .info p {
+        font-size: 16px;
+    }
+
+    .main .info h1 {
+        padding-top: 0;
+    }
+
+    .main .info p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main input {
+        padding: 1rem 1.5rem;
+    }
+
+    .main .reg-form {
+        padding: 1.5rem 1.5rem 3.5rem;
+    }
+
+    .main .registeration {
+        padding: 2rem 0 0;
+        width: 100%;
+    }
+
+    .main .terms {
+        width: 16rem;
+    }
+
+    .main .term-container {
+        text-align: center;
+    }
+}

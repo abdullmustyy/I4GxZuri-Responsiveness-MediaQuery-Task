@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regr-Form Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="info">
+                <h1>
+                    Learn to code by watching others
+                </h1>
+                <p>
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                    but understanding how developers think is invaluable.
+                </p>
+            </section>
+
+            <section class="registeration">
+                <div class="pricing">
+                    <p><strong>Try it free 7 days</strong> than $20/mo, thereafter</p>
+                </div>
+                <div class="reg-form">
+                    <form action="#" class="form">
+                        <div class="invalid-input">
+                            <input type="text" id="fname" name="first-name" placeholder="First Name" required>
+                            <span class="span1">First Name cannot be empty</span>
+                        </div>
+                        <div>
+                            <input type="text" id="lname" name="last-name" placeholder="Last Name" required>
+                            <span class="span2">Last Name cannot be empty</span>
+                        </div>
+                        <div class="email-container">
+                            <input type="email" id="email" name="email" placeholder="Email Address" class="email" required>
+                            <span class="span3">Looks like this is not an email</span>
+                            <span class="invalid-span">email@example/com</span>
+                        </div>
+                        <div>
+                            <input type="password" id="pwd" name="password" placeholder="Password" minlength="8"
+                                required>
+                            <span class="span4">Password cannot be empty</span>
+                        </div>
+                        <div>
+                            <input type="submit" value="CLAIM YOUR FREE TRIAL" class="button">
+                        </div>
+                    </form>
+                    <div class="term-container">
+                        <p class="terms">By clicking the button, you are agreeing to our <strong>Terms and
+                                Services</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
