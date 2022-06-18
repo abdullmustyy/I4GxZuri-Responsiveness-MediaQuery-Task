@@ -125,6 +125,26 @@ input:valid {
     padding: 0 1rem;
 }
 
+.main .info button {
+    border: none;
+    border-radius: 3rem;
+    Box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    height: 4rem;
+    margin-bottom: 1rem;
+    padding: 0rem 4rem;
+}
+
+.main .info button:hover {
+    color: lighten(var(--primaryColor), 50%);
+    opacity: 0.6;
+}
+
 .main .info p {
     color: white;
     font-size: 17px;
@@ -160,8 +180,8 @@ input:valid {
 .main .reg-form {
     background: white;
     box-shadow:
-            0 10px 20px rgba(0, 0, 0, 0.19),
-            0 6px 6px rgba(0, 0, 0, 0.23);
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 0.5rem;
     padding: 2.5rem 2.5rem 3rem;
 }
